@@ -16,8 +16,9 @@ To initiate the project, I performed a data merge of three tables utilizing the 
 
 This analysis will be carried out by utilizing data from separate tables containing information for 2018, 2019, and 2020. In order to facilitate the analysis process, these tables will need to be combined into a single table. The following SQL code accomplishes this task:
 
+'''sql
 
---
+
 SELECT * FROM dbo.[2018]
 
 UNION
