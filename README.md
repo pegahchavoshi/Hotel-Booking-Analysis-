@@ -7,3 +7,16 @@ The hotel project involves creating a database to analyze and visualize hotel bo
 * Whether the hotel revenue is growing by year
 * Analyzing trends in guests with personal cars to determine if the hotel needs to increase parking lot size
 * Identify trends in the data with a focus on the average daily rate and guests to explore seasonality
+
+
+To initiate the project, I performed a data merge of three tables utilizing the UNION command to generate a consolidated table with a total row count of 90,776. Here's the SQL query that I used for this step:
+
+
+SELECT *
+FROM hotel_2019
+UNION ALL
+SELECT *
+FROM hotel_2020
+UNION ALL
+SELECT *
+FROM hotel_2021;
