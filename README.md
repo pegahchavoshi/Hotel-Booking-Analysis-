@@ -16,7 +16,19 @@ To initiate the project, I performed a data merge of three tables utilizing the 
 
 This analysis will be carried out by utilizing data from separate tables containing information for 2018, 2019, and 2020. In order to facilitate the analysis process, these tables will need to be combined into a single table. The following SQL code accomplishes this task:
 
-<img width="187" alt="Screenshot 2023-04-14 163736" src="https://user-images.githubusercontent.com/94572320/232170884-e2bd8f94-37a4-476b-8963-03b0afc99c0c.png">
 
+SELECT * FROM dbo.[2018]
+
+UNION
+
+SELECT * FROM dbo.[2019]
+
+UNION
+
+SELECT * FROM dbo.[2020]
+
+SELECT column1, column2
+FROM table1
+WHERE column3 = 'value';
 
 
