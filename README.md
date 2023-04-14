@@ -12,14 +12,4 @@ The hotel project involves creating a database to analyze and visualize hotel bo
 To initiate the project, I performed a data merge of three tables utilizing the UNION command to generate a consolidated table with a total row count of 90,776. Here's the SQL query that I used for this step:
 
 
-SELECT * FROM dbo.[2018]
-
-UNION
-
-SELECT * FROM dbo.[2019]
-
-UNION
-
-SELECT * FROM dbo.[2020]
-
 
