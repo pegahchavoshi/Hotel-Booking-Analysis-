@@ -14,9 +14,12 @@ To initiate the project, I performed a data merge of three tables utilizing the 
 
 ## Revenue Analysis
 
-This analysis will be carried out by utilizing data from separate tables containing information for 2018, 2019, and 2020. In order to facilitate the analysis process, these tables will need to be combined into a single table. The following SQL code accomplishes this task:
+This analysis will be carried out by utilizing data from separate tables containing information for 2018, 2019, and 2020.
 
-'''sql
+### Data preparation
+
+The data is available in separate tables for 2018, 2019, and 2020, and needs to be combined into one table to facilitate analysis
+To combine the tables into one the following SQL code was executed:
 
 
 SELECT * FROM dbo.[2018]
@@ -28,6 +31,31 @@ SELECT * FROM dbo.[2019]
 UNION
 
 SELECT * FROM dbo.[2020]
+
+
+This resulted in a table with 90,776 rows.
+
+
+### Revenue Calculation
+
+to calculate the revenue, we need to check if the table has a Revenue column. If it does not exist, we can create it using the following SQL code:
+
+WITH hotel AS (
+
+SELECT * FROM dbo.[2018]
+
+UNION
+
+SELECT * FROM dbo.[2019]
+
+UNION
+
+SELECT * FROM dbo.[2020])
+
+
+
+
+
 
 
 
