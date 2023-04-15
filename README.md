@@ -57,3 +57,34 @@ FROM hotel
 This calculates the revenue using the formula (stays_in_weekend_nights + stays_in_week_nights) * adr. The resulting table will have a column named "revenue" with the calculated revenue for each row.
 
 
+In the previous section, we analyzed the revenue growth of a hotel over the last three years by merging separate tables and adding a revenue column to the table. We further segmented the revenue by grouping them by year and hotel type.
+
+Now, we want to see if the revenue is increasing or not. By adding an additional column called arrival_date_year to the previous query, we were able to group and sum the revenue by year. The results showed that the revenue for the hotel in 2018 was 4 million, in 2019 it was 16 million, and in 2020 it was 14 million. This indicates that the revenue was growing until 2019 and slightly decreased in 2020.
+
+
+WITH hotel AS (
+
+SELECT * FROM dbo.[2018]
+
+UNION
+
+SELECT * FROM dbo.[2019]
+
+UNION
+
+SELECT * FROM dbo.[2020])
+
+SELECT 
+
+arrival_date_year,
+
+hotel,
+
+round(SUM((stays_in_weekend_nights + stays_in_week_nights)*adr),2) AS revenue 
+
+FROM hotel
+
+GROUP BY arrival_date_year,hotel
+
+
+
