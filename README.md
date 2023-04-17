@@ -130,7 +130,9 @@ To further investigate this relationship, I created a scatter plot that shows th
 Overall, my analysis suggests that increasing the parking lot size can have a positive impact on our revenue. By accommodating more guests with personal cars, we can attract more budget-conscious guests who are more likely to drive to our hotel. This can help us increase our revenue and improve our competitive position in the market.
 
 
-<img width="1909" alt="Screenshot 2023-04-14 104117" src="https://user-images.githubusercontent.com/94572320/232579672-ac3f42ee-2d62-4e53-80bf-aa729820b0d7.png">
 
 
+
+
+<img width="1474" alt="Screenshot 2023-04-14 104117" src="https://user-images.githubusercontent.com/94572320/232580085-a90f6c0e-923e-4b27-b850-85d8d2eaf51b.png">
 
