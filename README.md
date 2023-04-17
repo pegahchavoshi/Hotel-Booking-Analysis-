@@ -124,8 +124,13 @@ ON dbo.meal_cost.meal=hotel.meal
 My analysis showed that our revenue has been increasing steadily over the past few years, with some seasonal fluctuations. However, I also noticed that there is a significant increase in revenue during the summer months, which is when we are likely to have more guests with personal cars. This indicates that there may be a correlation between the number of guests with personal cars and our revenue.
 
 
+To further investigate this relationship, I created a scatter plot that shows the relationship between the number of guests with personal cars and our revenue. I used the number of guests with personal cars as the x-axis and the total revenue as the y-axis. My analysis showed a clear positive correlation between the two variables, which means that as the number of guests with personal cars increases, our revenue also increases.
 
 
+Overall, my analysis suggests that increasing the parking lot size can have a positive impact on our revenue. By accommodating more guests with personal cars, we can attract more budget-conscious guests who are more likely to drive to our hotel. This can help us increase our revenue and improve our competitive position in the market.
+
+
+<img width="1909" alt="Screenshot 2023-04-14 104117" src="https://user-images.githubusercontent.com/94572320/232579672-ac3f42ee-2d62-4e53-80bf-aa729820b0d7.png">
 
 
 
